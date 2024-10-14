@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project2 | Reaction Tester Game</title>
+
+<style type="text/css">
+    .box{
+        
+        background-color: darkcyan;
+        width: 280px;
+        height: 280px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .result{
+        text-align: center;
+
+    }
+</style>
+
+
+</head>
+<body>
+    <h1>Test Your Reactions!</h1>
+
+     <p>click on the boxes as quickly as you can!</p>
+
+     <h4 class="result"></h4>
+
+    <div class="box"></div>
+
+
+    <!-- let's write the logic -->
+     <script>
+
+        const box = document.querySelector('.box');
+        const resultText = document.querySelector('.result');
+
+        function moveAndCalculate(){
+            const time = new Date().getMilliseconds();
+            resultText.textContent = `You took: ${time/1000} seconds to click!`;
+
+            let leftPos = Math.random() * 900;
+            let topPos = Math.random() * 400;
+            let size = (Math.random() * 300) + 100; // min size 100px;
+
+            // toggle color
+            let color = "";
+             const char = "0123456789ABCDEF";
+            for(let i = 0; i<6; i++){
+                key = Math.floor(Math.random() * char.length);
+                color += char[key];
+            }
+
+            box.style.cssText = 
+            `top:${topPos}px; left: ${leftPos}px; width: ${size}px; height: ${size}px; background-color: #${color}`;
+
+        }
+
+
+        box.addEventListener('click', moveAndCalculate);
+ 
+     </script>
+</body>
+</html>

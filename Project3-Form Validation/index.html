@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORM VALIDATION | JQUERY VALIDATION</title>
+
+<style>
+    body{
+        background-origin: #eee;
+        font-size: 130%;
+        font-family: system-ui,'Open Sans', sans-serif;
+    }
+
+    .form--box{
+        border: 2px solid #444;
+        width: 500px;
+        padding: 18px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    form{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .form--field{
+        margin-bottom: 12px;
+        padding: 8px;
+    }
+
+    input{
+        padding:6px;
+        width: 100%;
+    }
+
+    .submit{
+        padding: 8px 16px;
+        font-size: 16px;
+        background: #444;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .msg{
+        color: red;
+        font-size: 18px;
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+    
+    <div class="form--box">
+        <div class="msg"></div>
+
+        <form id="jquery--form">
+       <div class="form--field">
+        <label for="Email">Email</label>
+        <input type="text" name="email" id="email">
+       </div>
+
+       <div class="form--field">
+           <label for="number">Phone Number</label>
+            <input type="text" name="phone" id="phone">
+       </div>
+
+       <div class="form--field">
+        <label for="pass">Password</label>
+            <input type="password" name="password" id="password">
+       </div>
+
+       <div class="form--field">
+        <label for="pass-confirm">Confirm Password</label>
+            <input type="password" name="password" id="password--confirm">
+       </div>
+
+       <button type="submit" class="submit">Submit</button>
+ 
+        </form>
+    </div>
+
+
+
+    <!-- let's write the validation logic -->
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    <script>
+
+    let error = "";
+
+
+      const inputs = [
+            { id: '#email', message: 'Email cannot be blank.' },
+            { id: '#phone', message: 'Phone cannot be blank.' },
+            { id: '#password', message: 'Password cannot be blank.' }
+        ];
+
+        
+        function isEmail(email){
+            var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+            var result = testEmail.test(email);
+              return result;
+        }
+
+
+        $('#jquery--form').submit(function (e){
+            e.preventDefault();
+
+            inputs.forEach(input =>{
+                    if($(input.id).val() === ""){
+                        error+= input.message + "</br>";
+                    }
+            });
+   
+            
+            if(error){
+                 $('.msg').html(error);
+                error = "";
+                return false; 
+            }
+
+
+            if(!isEmail($('#email').val())){
+                error += 'Provide correct email...';
+                return false;
+            }
+
+            if(!$.isNumeric($('#phone').val())){
+                error += 'Provide Only Numbers...';
+                return false;
+            }
+
+            if($('#password').val() !== $('#password--confirm').val()){
+                error += 'Password and confirmPassword does not match...';
+                return false;
+            }
+
+            if(error == ""){
+                $('.msg').html('Registered Successfully!')
+            }
+
+            // not submitting the form...
+            
+            // $('#jquery--form').unbind('submit').submit();
+
+        });
+
+    </script>
+</body>
+</html>

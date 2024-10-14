@@ -1,0 +1,101 @@
+@media screen and (min-width: 1040px){
+    .container{
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+
+    .navbar{
+        padding: 35px 50px;
+    }
+
+    .custom--nav{
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+
+    }
+
+    .navbar .navbar--nav{
+        display: block;
+         padding: 16px 18px;
+
+    }
+
+    .navbar ul li{
+        padding: 0;
+        display: inline-block;
+      }
+
+      .navbar--nav li a:link,
+      .navbar--nav li a:visited{
+         padding: 10px 25px;
+      }
+
+
+      .hero--text--area{
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+
+      .hero--text--area h1{
+        letter-spacing: 2px;
+        word-spacing: 1px;
+      }
+
+      .Features h1{
+        letter-spacing: 2px;
+      }
+      .Features .feature--subtitle{
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .Features .grid--area{
+        display: grid;
+        grid-template-columns:auto auto auto auto;
+      }
+      
+
+      .meal--container .meal--grid{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+      }
+      
+      .meal--container .meal{
+        position: relative;
+        width:auto;
+      }
+
+      .meal:hover .overlay--text{
+        margin-top: 90px;
+        font-size: 100%;
+      }
+
+      .howitworks .work--area--grid{
+        grid-template-columns: 40% auto;
+        grid-gap: 0;
+      }
+
+      .text--area .serial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 4px solid var(--primary-color);
+        color: var(--primary-color);
+        font-size: 130%;
+      }
+      
+      
+      .text--area .text--area--info{
+        font-weight: 300;
+        font-size: 105%;
+      }
+      
+
+}
+
