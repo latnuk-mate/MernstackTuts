@@ -95,7 +95,46 @@
         font-weight: 300;
         font-size: 105%;
       }
+
+      .city--section .city--grid{
+        grid-template-columns: auto auto auto auto;
+
+      }
+
+      .city .city--image{
+        width: 100%;
+        height: 200px;
+      }
       
+
+      .testimony--section .testimony--grid{
+        grid-template-columns: auto auto auto;
+    }
+
+    .pricing--section .price--grid{
+      grid-template-columns: auto auto auto;
+    }
+
+    .contact--form .row{
+        width: 70%;
+    }
+
+    .contact--form .row .col-lg-6{
+      width: 50%;
+    }
+
+    .contact--form .row .form--field{
+      grid-template-columns: 70% 150%;
+    }
+
+    .contact--form .row .form--field{
+      margin-bottom: 30px;
+    }
+
+    .contact--form form button{
+      margin-left: auto;
+    }
+    
 
 }
 

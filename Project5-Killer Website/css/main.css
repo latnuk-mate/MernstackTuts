@@ -161,7 +161,7 @@
   /* hero part is done! */
 
   .Features{
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
   }
 
@@ -208,7 +208,7 @@ ion-icon {
 /* feature section is done! */
 
 .meal--container{
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
 }
 
@@ -303,6 +303,277 @@ ion-icon {
 
 
 /*  how section is done!*/
+
+.city--section{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.city--section h1{
+  text-align: center;
+}
+
+.city--section .city--grid{
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 30px;
+  padding-top: 30px;
+}
+
+.city .city--image{
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.city .city--image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.city .city--information .city--name{
+  font-size: 140%;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: var(--subText-color);
+
+}
+
+.city--information .city--details{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+
+}
+
+.city--details ion-icon{
+  font-size: 130%;
+}
+
+
+.city--details h5{
+  font-size: 110%;
+  font-weight: 300
+}
+
+.city--details a{
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+
+/* city part is done! */
+
+.testimony--section{
+  margin-top: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-image: url("../imgs/back-customers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  color: #ECF0F1;
+}
+.testimony--section h1{
+  text-align: center;
+}
+
+.testimony--section .testimony--grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 45px;
+    padding-top: 3rem;
+}
+
+.testimony--section .testimony .quote::before{
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  font-weight: 400;
+}
+
+.testimony--section .testimony{
+  margin-bottom: 35px;
+}
+
+.testimony--section .testimony .quote{
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.testimony .customer--area{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.testimony .customer--area img{
+  width: 60px;
+  border-radius: 50%;
+}
+
+.testimony .customer--area cite{
+    font-weight: 300;
+}
+
+/* testimony section is done! */
+
+.pricing--section{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.pricing--section h1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pricing--section .price--grid{
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 40px;
+  padding-top: 2rem;
+}
+
+.price--grid .item{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.price--grid .item .price--title{
+  color: var(--subText-color);
+  margin-bottom: 16px;
+  font-size: 120%;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.item .first--section{
+  padding: 25px 20px;
+  background-color: rgba(230, 225, 225, 0.1);
+}
+
+.item .first--section .price--tag{
+  font-size: 240%;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+.first--section .price--tag small{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.item .first--section > p{
+  font-weight: 300;
+}
+
+.item .second--section,
+.item .third--section{
+  padding: 20px 25px;
+}
+
+.item .second--section > p{
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 120%;
+  margin-bottom: 10px;
+}
+
+.item .second--section > p ion-icon{
+  font-size: 30px;
+}
+
+.item .third--section{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* price section is done */
+
+.contact--form{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.contact--form h1{
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.contact--form .row{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.contact--form .row .col-lg-6{
+  width: 100%;
+}
+
+
+.contact--form .row .form--field{
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap: 20px;
+  margin-bottom: 35px;
+}
+
+.contact--form .row .form--field label{
+  font-size: 120%;
+  font-weight: 300;
+}
+
+.contact--form form input, textarea, select{
+    padding: 8px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.contact--form form input[type="checkbox"]{
+   appearance: none;
+    box-shadow: none;
+    margin-right: auto;
+    padding:0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.contact--form form input[type="checkbox"]:checked{
+  background-color: var(--primary-color);
+}
+
+.contact--form form input[type="checkbox"]:checked::after{
+  content: "\2714";
+  color: #ffffff;
+}
+
+.contact--form form input:focus, textarea:focus, select:focus{
+  border-color: var(--primary-color);
+}
+
+.contact--form form button{
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* contact form part is done! */
+
+
 
 
 
