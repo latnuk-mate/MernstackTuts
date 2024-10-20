@@ -48,6 +48,7 @@
     padding-right: 30px;
   }
 
+
   .border--line{
     width: 120px;
     margin: auto;
@@ -78,9 +79,12 @@
       width: 100%;
 
   }
+
   .navbar{
     padding: 12px 14px;
   }
+
+
 
   .custom--nav{
     display: flex;
@@ -89,6 +93,7 @@
     flex-direction: column;
     gap: 10px;
   }
+
 
   nav .nav--brand{
       display: flex;
@@ -573,7 +578,58 @@ ion-icon {
 
 /* contact form part is done! */
 
+.footer{
+  margin-top: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #555;
+}
 
+.footer .footer--area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.footer--links ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 22px 25px;
+  margin-bottom: 10px;
+}
+
+.footer--links ul .links{
+    color: var(--element--bg-color);
+    opacity: 0.4;
+    font-weight: 300;
+    padding: 10px 12px;
+    
+}
+
+.footer--area .footer--social--links{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer--area .footer--social--links ion-icon{
+  font-size: 22px;
+  color: var(--element--bg-color);
+  opacity: 0.4;
+}
+
+.footer .copyright{
+  text-align: center;
+  margin-top: 30px;
+  color: var(--element--bg-color);
+  opacity: 0.4;
+  font-weight: 300;
+}
 
 
 

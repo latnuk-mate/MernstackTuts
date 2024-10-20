@@ -1,0 +1,114 @@
+:root{
+    --primary-color : #343434;
+    --shadow-color1: #191b1b;
+    --shadow-color2 : #595959;
+}
+
+body{
+    background-color: var(--primary-color);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+
+.app_container{
+    background-color: var(--primary-color);
+    width: 500px;
+    height: 480px;
+    padding:16px 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px var(--shadow-color1), -5px -5px 10px var(--shadow-color2);
+    margin-top: 20px;
+
+}
+
+.app_container .app--title{
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+}
+
+.app_container .search--area{
+    padding: 4px 6px;
+    width: 100%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.search--area input{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 0;
+}
+.search--area input:focus{
+    outline: none;
+}
+
+.search--area .btn--search{
+    padding: 10px 25px;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    color: #ffffff;
+    box-shadow: 2px 2px 6px var(--shadow-color1), -2px -2px 6px var(--shadow-color2);
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.information--area{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.location .location--name{
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.location .desc{
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 14px;
+}
+
+.temperature{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.img--box{
+    width: 60px;
+    width: 60px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px var(--shadow-color1), -2px -2px 6px var(--shadow-color2);
+    margin-top: 20px;
+    margin: auto;
+
+}
+
+.img--box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.refresh--btn{
+    background-color: transparent;
+    color: #ffffff;
+    box-shadow: 2px 2px 6px var(--shadow-color1), -2px -2px 6px var(--shadow-color2);
+    padding: 22px 24px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+}

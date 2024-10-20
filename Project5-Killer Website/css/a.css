@@ -1,0 +1,29 @@
+/* for smaller devices */
+@media only screen and (max-width: 480px){
+    .container{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .navbar{
+        padding: 12px 14px;
+      }
+
+
+      .custom--nav{
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+        .navbar .navbar--nav{
+            list-style-type: none;
+          }
+
+          
+    
+  
+    
+  
+  
+  }
