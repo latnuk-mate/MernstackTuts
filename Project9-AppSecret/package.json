@@ -1,0 +1,22 @@
+{
+  "name": "project9-appsecret",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "latnuk-mate",
+  "license": "ISC",
+  "description": "An App for authentication.",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.2",
+    "mongoose-field-encryption": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

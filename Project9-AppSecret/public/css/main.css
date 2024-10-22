@@ -1,0 +1,30 @@
+body{
+    background-color: #E9EFEC;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home .key--image{
+    width: 150px;
+}
+
+.home .home--title{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.key--image img{
+    width: 150px;
+    object-fit: cover;
+}
+
+.home .border--width{
+    width: 100%;
+    border: 1px solid #C4DAD2;
+}

@@ -35,7 +35,7 @@ async function weatherData(url){
 
 }
 
-async function  main(value) {
+async function  main(value="delhi") {
     // get the key from file....
     const file = await fetch('./api.json');
     const res = await file.json();
@@ -44,7 +44,7 @@ async function  main(value) {
 }
 
 
-
+main(); // call it for the first render...
 
 
 button.addEventListener('click', (e)=>{
