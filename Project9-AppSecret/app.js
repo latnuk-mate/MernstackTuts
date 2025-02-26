@@ -42,7 +42,7 @@ const SecretSchema = mongoose.Schema({
 
 SecretSchema.plugin(encryption, { 
     fields: ["password"], 
-    secret: process.env.SECRET_KEY,
+    secret: "HELLO I AM A SECRET APP",
     saltGenerator: function (secret) {
       return "1234567890123456"; 
     },
@@ -66,7 +66,6 @@ const connection = async()=>{
 }
 
 connection(); // init the database...
-
 
 
 // define routes...
